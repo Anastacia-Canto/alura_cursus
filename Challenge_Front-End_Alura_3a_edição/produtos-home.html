@@ -10,57 +10,22 @@
     </head>
     <body>
         <header>
-            <img class="logo" alt="AluraGeek" src="img/logo.png">
+            <a href="index.html"><img class="logo" alt="AluraGeek" src="img/logo.png"></a>
             <div class="search-container">
                 <input class="search" type="text" placeholder="O que deseja encontrar?">
             </div>
-            <button class="login-button">Login</button>
+            <a class="login-button" href="home-login.html">Login</a>
         </header>
         <main>
             <section class="galeria-de-produtos">
                 <section class="produtos-similares">
                     <div class="topo">
                         <h1>Todos os produtos</h1>
-                        <button type="button" class="adicionar-button">Adicionar produto</button>
+                        <a class="adicionar-button" href="adicionar-produto.html">Adicionar produto</a>
                     </div>
                     <nav>
-                        <ul class="lista">
-                            <li>
-                                <img src="img/produto_1.png">
-                                <h2 class="nome">Produto XYZ</h2>
-                                <h2 class="preco">R$ 60,00</h2>
-                                <h2 class="codigo-do-produto">#1111111</h2>
-                            </li>
-                            <li>
-                                <img src="img/produto_2.png">
-                                <h2 class="nome">Produto XYZ</h2>
-                                <h2 class="preco">R$ 60,00</h2>
-                                <h2 class="codigo-do-produto">#1111111</h2>
-                            </li>
-                            <li>
-                                <img src="img/produto_3.png">
-                                <h2 class="nome">Produto XYZ</h2>
-                                <h2 class="preco">R$ 60,00</h2>
-                                <h2 class="codigo-do-produto">#1111111</h2>
-                            </li>
-                            <li class="imagem-produto">
-                                <img src="img/produto_4.png">
-                                <h2 class="nome">Produto XYZ</h2>
-                                <h2 class="preco">R$ 60,00</h2>
-                                <h2 class="codigo-do-produto">#1111111</h2>
-                            </li>
-                            <li>
-                                <img src="img/produto_5.png">
-                                <h2 class="nome">Produto XYZ</h2>
-                                <h2 class="preco">R$ 60,00</h2>
-                                <h2 class="codigo-do-produto">#1111111</h2>
-                            </li>
-                            <li>
-                                <img src="img/produto_6.png">
-                                <h2 class="nome">Produto XYZ</h2>
-                                <h2 class="preco">R$ 60,00</h2>
-                                <h2 class="codigo-do-produto">#1111111</h2>
-                            </li>
+                        <ul class="lista-Star-War" data-lista>
+                            
                         </ul> 
                     </nav>
                     <nav>
@@ -173,4 +138,7 @@
             </div>
         </footer>
     </body>
+
+    <script type="module" src="controller/listaProdutos-controller.js"></script>
+
 </html>

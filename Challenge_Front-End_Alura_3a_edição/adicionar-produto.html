@@ -10,33 +10,39 @@
     </head>
     <body>
         <header>
-            <img class="logo" alt="AluraGeek" src="img/logo.png">
+            <a href="index.html"><img class="logo" alt="AluraGeek" src="img/logo.png"></a>
             <div class="search-container">
                 <input class="search" type="text" placeholder="O que deseja encontrar?">
             </div>
-            <button class="login-button">Login</button>
+            <a class="login-button" href="home-login.html">Login</a>
         </header>
         <main>
            <section class="adicionar-produto-novo">
                <h1>Adicionar novo produto</h1>
-               <div class="inclui-produto">
-                   <img src="img/adicionar_produto.png">
-                   <h2>ou</h2>
-                   <button class ="inclui-button" type="button">Procure no seu computador</button>
-               </div>
-               <div class="nome-do-produto-novo">
-                    <p>Nome do produto</p>
-                   <input type="text" placeholder="Produto XYZ">
-               </div>
-               <div class="preco-do-produto-novo">
-                   <p>Preço do produto</p>
-                   <input type="text" placeholder="R$ 60,00">
-               </div>
-               <div class="descricao-do-produto-novo">
-                    <p>Descrição do produto</p>
-                   <input type="text">
-               </div>
-               <button type="button">Adicionar produto</button>
+               <form data-form>
+                   <div class="inclui-produto" data-imagem>
+                       <div id="displayImage"></div>
+                       <h2>ou</h2>
+                       <input type="file" id="imagemDoProduto" accept="image/png, image/jpg">
+                   </div>
+                   <div class="categoria-do-produto-novo" data-categoria>
+                        <p>Categoria do produto</p>
+                        <input type="text">
+                    </div>
+                   <div class="nome-do-produto-novo" data-nome>
+                        <p>Nome do produto</p>
+                       <input type="text" placeholder="Produto XYZ">
+                   </div>
+                   <div class="preco-do-produto-novo" data-preco>
+                       <p>Preço do produto</p>
+                       <input type="text" placeholder="R$ 60,00">
+                   </div>
+                   <div class="descricao-do-produto-novo" data-descricao>
+                        <p>Descrição do produto</p>
+                       <input type="text">
+                   </div>
+                   <button type="submit">Adicionar produto</button>
+               </form>
            </section>
         </main>
         <footer>
@@ -67,5 +73,7 @@
             </div>
         </footer>
     </body>
+
+    <script type="module" src="controller/cadastroDeProdutos-controller.js"></script>
     
 </html>

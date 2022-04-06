@@ -52,113 +52,29 @@ header{
     text-align: center;
 }
 
-.produto-e-descricao{
-    display: flex;
-    margin: 64px 0;
-    padding: 0 10.6% 0 10.6%;
-}
-
-.descricao{
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    padding: 8% 0 8% 2%;
-}
-
-.descricao h1{
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 52px;
-    line-height: 61px;
-    color: #464646;
-}
-
-.descricao h2{
+h1 {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #464646;
-    margin-top: 8px;
-}
-
-.descricao p{
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #464646;
-    margin-top: 8px;
-}
-
-.galeria-de-produtos{
-    width: 100%;
-    padding: 0 11%;
-    margin-top: 5%;
-}
-
-.galeria-de-produtos section{
-    margin-bottom: 64px;
-}
-
-.galeria-de-produtos .topo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.galeria-de-produtos .topo h1{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-style: normal;
     font-size: 32px;
-    line-height: 38px;;
+    line-height: 38px;
     color: #464646;
-}
-
-.galeria-de-produtos .lista{
-    display: flex;
-    justify-content: space-between;
     width: 100%;
+    text-align: center;
+    padding: 5%;
 }
 
-.galeria-de-produtos .lista li{
-    margin-right: 1%;
+.retorno {
+    padding: 10px 42%;
 }
 
-.galeria-de-produtos .nome{
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #464646;
-    margin-top: 8px;
-}
-
-.galeria-de-produtos .preco{
+a {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
-    color: #464646;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.galeria-de-produtos .lista a{
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #2A7AE4;
-    text-decoration: none;
+    line-height: 20px;
+    color: #2a7ae4;
 }
 
 .footer{

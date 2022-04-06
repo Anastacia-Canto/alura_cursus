@@ -38,7 +38,8 @@ header{
     font-size: 14px;
 }
 
-.login-button{
+.login-button {
+    text-decoration: none;
     background: #FFFFFF;
     color: #2A7AE4;
     border: solid 1px #2A7AE4;
@@ -47,6 +48,8 @@ header{
     font-size: 16px;
     width: 30%;
     height: 46px;
+    padding: 16px 0px;
+    text-align: center;
 }
 
 .galeria-de-produtos{
@@ -76,6 +79,7 @@ header{
 }
 
 .topo .adicionar-button{
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -86,9 +90,10 @@ header{
     background: #2A7AE4;
     height: 51px;
     width: 14.6%;
+    padding: 15px;
 }
 
-.galeria-de-produtos .lista{
+.galeria-de-produtos .lista, .lista-Star-War{
     display: flex;
     justify-content: space-between;
     width: 100%;
