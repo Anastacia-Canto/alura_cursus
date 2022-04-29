@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AluraGeek</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    <body>
+        <header>
+            <a href="index.html"><img class="logo" alt="AluraGeek" src="img/logo.png"></a>
+            <div class="search-container">
+                <input class="search" type="text" placeholder="O que deseja encontrar?">
+            </div>
+            <a class="login-button" href="home-login.html">Login</a>
+        </header>
+        <main>
+            <section class="banner">
+                <div class="text-banner">
+                    <h1>Dezembro Promocional</h1>
+                    <h2>Produtos selecionados com 33% de desconto</h2>
+                    <a href="#consoles-section">Ver consoles</a>
+                </div>
+            </section>
+            <section class="galeria-de-produtos">
+                <section class="star-wars">
+                    <div class="topo">
+                        <h1>Star Wars</h1>
+                        <div class="ver-tudo">
+                            <a href="produtos-home.html">Ver tudo</a>
+                            <img alt="seta para ver tudo" src="img/seta.png">
+                        </div>
+                    </div>
+
+                    <nav>
+                        <ul class="lista" data-lista-1>
+                            
+                        </ul>
+                        
+                    </nav>
+                </section>
+                <section id="consoles-section" class="consoles">
+                    <div class="topo">
+                        <h1>Consoles</h1>
+                        <div class="ver-tudo">
+                            <a href="produtos-home.html">Ver tudo</a>
+                            <img alt="seta para ver tudo" src="img/seta.png">
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="lista" data-lista-2>
+                           
+                        </ul>
+                    </nav>
+                </section>
+                <section class="diversos">
+                    <div class="topo">
+                        <h1>Diversos</h1>
+                        <div class="ver-tudo">
+                            <a href="produtos-home.html">Ver tudo</a>
+                            <img alt="seta para ver tudo" src="img/seta.png">
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="lista" data-lista-3>
+                            
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="conteudo">
+                    <img class="logo" alt="logo da AluraGeek" src="img/logo.png">
+                    <ul class="links">
+                        <li><a href="quem_somos_nos.html">Quem somos nós</a></li>
+                        <li><a href="politica_de_privacidade.html">Política de privacidade</a></li>
+                        <li><a href="programa_fidelidade.html">Programa fidelidade</a></li>
+                        <li><a href="nossas_lojas.html">Nossas lojas</a></li>
+                        <li><a href="quero_ser_franqueado.html">Quero ser franqueado</a></li>
+                        <li><a href="anuncie_aqui.html">Anuncie aqui</a></li>
+                    </ul>
+                    <div class="contato">
+                        <p>Fale conosco</p>
+                        <div class="campo-nome">
+                            <p>Nome</p>
+                            <input type="text" class="nome" placeholder="André Lisboa">
+                        </div>    
+                        <input type="text" class="mensagem" placeholder="Escreva sua mensagem">
+                        <button class="contato-button">Enviar mensagem</button>
+                    </div>
+                </div>
+                <div class="rodape">
+                    <p>Desenvolvido por Anastácia Canto<br>2022</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script type="module" src="controller/produtosPaginaInicial.js"></script>
+
+</html>
