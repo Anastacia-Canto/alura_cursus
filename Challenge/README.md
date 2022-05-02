@@ -13,4 +13,4 @@ Then set up the CSS configuration following a Figma with instructions but studen
 list of products and its specific informations, that shloud be dynamically exhibited on the webpage.</p>
 
 <p>To develop this project some specific courses from Alura were indicated as knowledge resource. Actually, the visual part is finished, 
-  including responsiveness design. The dynamization is still in process.</p>
+  including responsive design. The dynamization is still in process.</p>
