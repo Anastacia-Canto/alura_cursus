@@ -11,8 +11,9 @@
     <body>
         <header>
             <a href="index.html"><img class="logo" alt="AluraGeek" src="img/logo.png"></a>
-            <div class="search-container">
-                <input class="search" type="text" placeholder="O que deseja encontrar?">
+            <div class="search-container" data-search>
+                <input id="inputSearch" class="search" type="texto" placeholder="O que deseja encontrar?">
+                <input class="searchImage" onclick="searchItem()" type="image" src="../img/search.png">
             </div>
             <a class="login-button" href="home-login.html">Login</a>
         </header>
@@ -20,23 +21,13 @@
             <section class="galeria-de-produtos">
                 <section class="produtos-similares">
                     <div class="topo">
-                        <h1>Todos os produtos</h1>
+                        <h1 id="titulo-produtos">Todos os produtos</h1>
                         <a class="adicionar-button" href="adicionar-produto.html">Adicionar produto</a>
                     </div>
                     <nav>
-                        <ul class="lista" data-lista-1>
+                        <ul class="lista" data-lista>
                             
                         </ul> 
-                    </nav>
-                    <nav>
-                        <ul class="lista" data-lista-2>
-                            
-                        </ul>
-                    </nav>
-                    <nav>
-                        <ul class="lista" data-lista-3>
-                            
-                        </ul>
                     </nav>
                 </section>
         </main>

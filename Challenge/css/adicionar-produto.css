@@ -2,9 +2,15 @@
     box-sizing: border-box;
   }
 
+html{
+    background-color: #FFFFFF;
+}
+
 body{
     background-color: #E5E5E5;
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 header{
@@ -22,17 +28,19 @@ header{
 }
 
 .search-container {
-    display: inline;
-    width: 100%;
-    padding-left: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    background: #F5F5F5;
+    margin: 0 20% 0 5%;
+    border-radius: 20px;
 }
 
 .search {
-    background: #F5F5F5 url(../img/search.png) 96% no-repeat;
+    background: #F5F5F5;
     border: none;
-    height: 34px;
-    border-radius: 20px;
-    width: 60%;
+    width: 85%;
     padding: 8px 16px 8px 16px;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
@@ -56,7 +64,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 30.6%;
+    padding: 0 20.6%;
     margin: 64px 0;
 }
 
@@ -68,7 +76,7 @@ header{
     line-height: 38px;
     color: #464646;
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin-bottom: 16px;
 }
 
@@ -114,7 +122,6 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width:560px;
     height: 56px;
     margin: 8px 0px;
     padding: 8px 12px;
@@ -167,20 +174,17 @@ header{
     margin-top: 8px;
 }
 
-.footer{
+footer{
     width: 100%;
-    height: 368px;
-    background: #EAF2FD;
-    top: 1641px;
 }
 
 .footer .conteudo{
     width: 100%;
-    height: 240px;
     top: 64px;
-    padding: 64px 10.6%;
+    padding: 40px 5%;
     display: flex;
     justify-content: space-between;
+    background: #EAF2FD;
 }
 
 .conteudo .logo{
@@ -207,7 +211,7 @@ header{
 }
 
 .contato{
-    width: 560px;
+    width: 40%;
     height: 240px;
     left: 576px;
     top: 0px;
@@ -238,7 +242,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width:560px;
+    width:100%;
     height: 56px;
     margin: 8px 0px;
     padding: 8px 12px;
@@ -266,7 +270,7 @@ header{
     font-size: 16px;
     line-height: 20px;
     color: #A2A2A2;
-    width:560px;
+    width:100%;
     height: 56px;
     margin: 8px 0px;
     padding: 8px 12px;
@@ -306,4 +310,91 @@ header{
     line-height: 19px;
     text-align: center;
     color: #464646;
+}
+
+@media screen and (max-width: 40em){
+    header{
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+
+    .search-container{
+        display: none;
+    }
+
+    .banner{
+        height: 192px;
+    }
+    
+    .text-banner{
+        top: 35%;
+        left: 5%;
+    }
+
+    .text-banner h1{
+        font-size: 1.2em;
+        height: 42px;
+    }
+
+    .text-banner h2{
+        font-size: 0.7em;
+        margin: 0px;
+        font-weight: 500;
+    }
+
+    .text-banner a{
+        padding: 10px 15px;
+        font-size: 0.7em;
+    }
+
+    .adicionar-produto-novo{
+        padding: 0 9.6%;
+    }
+
+    .inclui-produto{
+        flex-direction: column;
+    }
+
+    .categoria-do-produto-novo, .nome-do-produto-novo, .preco-do-produto-novo, .descricao-do-produto-novo {
+        width: unset;
+        margin: 8px 8px;
+    }
+
+    .adicionar-produto-novo button{
+        margin: 0 8px;
+        width: 95%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .conteudo{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 15px 5%;
+    }
+
+    .footer ul{
+        align-items: center;
+        margin-top: 10px;
+        height: 200px;
+    }
+
+    .footer .contato{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .footer .campo-nome{
+        width: 100%;
+    }
+
+    .footer input{
+        width: 100%;
+    }
+
+
 }

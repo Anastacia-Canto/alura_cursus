@@ -32,17 +32,19 @@ main{
 }
 
 .search-container {
-    display: inline;
-    width: 100%;
-    padding-left: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    background: #F5F5F5;
+    margin: 0 20% 0 5%;
+    border-radius: 20px;
 }
 
 .search {
-    background: #F5F5F5 url(../img/search.png) 96% no-repeat;
+    background: #F5F5F5;
     border: none;
-    height: 34px;
-    border-radius: 20px;
-    width: 60%;
+    width: 85%;
     padding: 8px 16px 8px 16px;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;

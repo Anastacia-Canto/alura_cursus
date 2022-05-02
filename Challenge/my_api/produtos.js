@@ -51,9 +51,19 @@ const removeProduto = (id) => {
     });
 };
 
+
+const searchItem = () => {
+    let input = document.getElementById('inputSearch').value;
+    window.location.href = `produtos-home.html?search=${input}`;
+};
+
+window.searchItem = searchItem;
+
 export const produtos = {
     listaProdutos,
     buscaProduto,
     incluirProduto,
-    removeProduto
+    removeProduto,
+    searchItem
 };
+

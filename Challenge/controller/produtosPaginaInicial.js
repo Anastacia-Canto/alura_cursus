@@ -13,6 +13,7 @@ const criaNovoProduto = (imagem, categoria, nome, preco, descricao, id) => {
     return itemNovoProduto;
 };
 
+
 const render = async () => {
     try {
         const listaDeProdutos = await produtos.listaProdutos();
@@ -32,3 +33,7 @@ const render = async () => {
 };
 
 render();
+
+
+
+

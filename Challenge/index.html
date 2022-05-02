@@ -8,11 +8,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
     <body>
         <header>
             <a href="index.html"><img class="logo" alt="AluraGeek" src="img/logo.png"></a>
-            <div class="search-container">
-                <input class="search" type="text" placeholder="O que deseja encontrar?">
+            <div class="search-container" data-search>
+                <input id="inputSearch" class="search" type="texto" placeholder="O que deseja encontrar?">
+                <input class="searchImage" onclick="searchItem()" type="image" src="../img/search.png">
             </div>
             <a class="login-button" href="home-login.html">Login</a>
         </header>

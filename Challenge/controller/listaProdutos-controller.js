@@ -19,30 +19,27 @@ const criaNovoProduto = (imagem, categoria, nome, preco, descricao, id) => {
 
 const render = async () => {
     try {
-        const listaDeProdutos = await produtos.listaProdutos();
-        let categoriasComDuplicadas =  listaDeProdutos.map( listaDeProdutos => listaDeProdutos.categoria);
-        let categoriasUnicas = new Set(categoriasComDuplicadas);
-        categoriasUnicas.forEach(categoria => {
-            let produtosDaCategoria = listaDeProdutos.filter(listaDeProdutos => listaDeProdutos.categoria === categoria);
-            // console.log(produtosDaCategoria);
-            produtosDaCategoria.forEach( elemento => {
-                const lista = document.querySelector(`[data-lista-${elemento.categoria}]`);
-                lista.appendChild(criaNovoProduto(elemento.imagem, elemento.categoria, elemento.nome, elemento.preco, elemento.descricao, elemento.id))
-                const botaoExcluir = lista.querySelector(`[data-id="${elemento.id}"] .excluir`);
-                botaoExcluir.addEventListener('click', async (evento) => {
-                    try {
-                        const itemProduto = evento.target.closest('[data-id]');
-                        let id = itemProduto.dataset.id;
-                        await produtos.removeProduto(id);
-                        itemProduto.remove();
-                    }
-                    catch(erro){
-                        console.log(erro);
-                    };
-                });
-            });
+        let listaDeProdutos = await produtos.listaProdutos();
+        const pegaURL = new URL(window.location);
+        const search = pegaURL.searchParams.get('search');
+        if (search?.length > 0){
+            listaDeProdutos = listaDeProdutos.filter(produto => produto.nome.toLowerCase().indexOf(search.toLowerCase()) != -1 );
+            let tituloDaPagina = document.getElementById("titulo-produtos");
+            tituloDaPagina.innerHTML = `Busca por: ${search}`;
+            let inputField = document.getElementById("inputSearch");
+            inputField.value = `${search}`;
+            if (listaDeProdutos?.length == 0){
+                let erro = document.getElementById("titulo-produtos");
+                erro.innerHTML = `Nenhum produto encontrado com ${search}`;
+            };
+        };
+        listaDeProdutos.sort(function (a, b) {
+            return a.nome.localeCompare(b.nome);
         });
-        
+        listaDeProdutos.forEach( elemento => {
+            const lista = document.querySelector('[data-lista]');
+            lista.appendChild(criaNovoProduto(elemento.imagem, elemento.categoria, elemento.nome, elemento.preco, elemento.descricao, elemento.id));
+        });
     }
     catch(erro){
         console.log(erro);
