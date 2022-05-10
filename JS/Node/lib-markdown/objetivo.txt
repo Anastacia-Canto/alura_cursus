@@ -1,0 +1,3 @@
+Uando um blog fictício, vamos fazer um programa que verifica os links que estão funcionando ou não no blog, que contém arquivos criados em Markdown.
+
+O formato Markdown, com extensão .md, é uma linguagem de marcação para a escrita de textos com marcadores simples de formatação que são convertidos para HTML. Muito utilizado em plataformas de comunicação e streaming como o Slack, e o Discord, além de ser a linguagem usada para arquivos README.  A vantagem sobre o HTML é principalmente a legibilidade. 
