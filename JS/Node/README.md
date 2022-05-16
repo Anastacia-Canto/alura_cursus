@@ -1,8 +1,27 @@
 ## Lib-Makrdown
 
-This was a project to develop a library that validate links on a webpage that were writen using Markdown syntax.
+This was a project to develop a library that validates links on a webpage that were writen using Markdown syntax.
 
-You must have the text in a text file. So the lib will look for the links and test them. You should manipulate the lib using a terminal.
+On this project was possible to learn topics as:
+
+> How to start a project on NodeJS
+> 
+> How to use npm libs
+> 
+> What is the package.json and node_modules
+>
+> How to manipulate the modules using ESM (EcmaScript Modules) and CJS (Common JS)
+> 
+>  How to read files with fs.readFile()
+>  
+>  How to work with asynchronous functions using .then() and async/await
+>  
+>  Regular expressions
+>  
+>  Unit testing
+
+
+To test this program you must have the text in a text file. So the lib will look for the links and test them. You should manipulate the lib using a terminal.
 
 
  - Commands:
