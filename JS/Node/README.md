@@ -1,4 +1,4 @@
-## Lib-Makrdown
+## Lib-Markdown
 
 This was a project to develop a library that validates links on a webpage that were writen using Markdown syntax.
 
