@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Número mágico</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../day2/reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Número mágico</h1>
+        <p class="enunciado">Você terá 3 tentativas para adivinhar um número entre 0 e 10.</p>
+        <div>
+            <form class="formulario">
+                <label>Qual o seu palpite?</label><br><br>
+                <input type="number" id="numero">
+                <button onclick="verificar(); return false;">Chutar</button>
+                <div class="resultado">
+                    <p id="resposta"></p>
+                    <p id="final"></p>
+                    <p id="reiniciar"></p>
+                </div>
+            </form>
+        </div>
+        <script src="day4.js"></script>
+    </body>
+</html>

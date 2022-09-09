@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="../day2/reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <div class="tela" id="tela">0</div>
+        <section class="calculadora">
+            <button type="button" class="key--operator" data-action="divisao">/</button>
+            <button type="button" class="key--operator" data-action="multiplicacao">*</button>
+            <button type="button" class="key--operator" data-action="subtracao">-</button>
+            <button type="button" class="key--operator" data-action="soma">+</button>
+            
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>
+            <button type="button" class="key--equal" data-action="calculate">=</button>
+
+            <button type="button">4</button>
+            <button type="button">5</button>
+            <button type="button">6</button>
+
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+
+            <button type="button">0</button>
+            <button type="button" data-action="clear">C</button>
+            <button type="button" data-action="decimal">.</button>
+        </section>
+    <script src="day7.js"></script>
+    </body>
+</html>
+
+<!-- https://www.freecodecamp.org/portuguese/news/como-construir-uma-calculadora-html-do-zero-usando-javascript/ -->

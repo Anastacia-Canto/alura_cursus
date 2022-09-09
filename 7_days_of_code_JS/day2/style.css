@@ -1,0 +1,71 @@
+body {
+    background: #836FFF;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin-top: 50px;
+    color: #FFFAF0;
+    text-shadow: 1px 1px #4F4F4F;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-top: 5%;
+}
+
+.form form {
+    grid-column-start: 2;
+    text-align: center;
+}
+
+.form label {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #FFFAF0;
+    text-shadow: 1px 1px #4F4F4F;
+}
+
+.form input {
+    margin: 20px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.submit-button {
+   background: #708090;
+   color: #FFFAF0;
+   box-shadow: 3px 3px 3px #4F4F4F;
+   font-family: 'Ubuntu', sans-serif;
+   text-shadow: 1px 1px #4F4F4F;
+}
+
+.submit-button:hover {
+    background: #0000FF;
+}
+
+footer {
+    background: #836FFF;
+    height: 50px;
+}
+
+.divisor {
+    width: 100%;
+    background: #0000FF;
+    height: 3px;
+    margin: 10px 0;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #FFFAF0;
+    text-shadow: 1px 1px #4F4F4F;
+}

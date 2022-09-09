@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Lista de compras</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../day2/reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@1&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Lista de compras</h1>
+        <form id="form">
+            <div id="inicio">
+                <p id="lista-atual"></p>
+                <p>Deseja adicionar algum item à sua lista de compras?</p>
+                <button onclick="adicionar(); return false;">Sim</button><button onclick="terminar(); return false;">Não</button><br><br>
+                <div id="remover">
+                    <p>Deseja remover algum item da lista?</p>
+                    <input id="elemento-removido" type="text" placeholder="Digite o nome do produto">
+                    <button onclick="removerItem(); return false;">Remover</button>
+                    <p id="resposta"></p>
+                </div>
+            </div>
+            <div id="inserir">
+                <p>Qual item deseja inserir?</p>
+                <input type='text' id='item'>
+                <p>Qual a categoria?</p>
+                <input type='radio' name='categoria' value='frutas' id='frutas'>
+                <label for='frutas'>Frutas</label><br>
+                <input type='radio' name='categoria' value='laticinios' id='laticinios'>
+                <label for='laticinios'>Laticinios</label><br>
+                <input type='radio' name='categoria' value='congelados' id='congelados'>
+                <label for='congelados'>Congelados</label><br>
+                <input type='radio' name='categoria' value='doces' id='doces'>
+                <label for='doces'>Doces</label><br>
+                <input type='radio' name='categoria' value='outros' id='outros'>
+                <label for='outros'>Outros</label><br><br>
+                <button onclick='inserirItem(); return false;'>Inserir</button>
+            </div>
+            <div id="finalizar">
+                <p>Sua lista está finalizada!</p><br><br>
+                <button onclick="exibirLista('lista'); return false;">Exibir</button>
+                <button onclick="novaLista(); return false;">Nova lista</button><br><br>
+                <p id="lista"></p>
+            </div>
+        </form>
+        <div id="modal-background">
+            <div id="inserir-modal">
+                <span class="close">&times;</span><br><br>
+                <p>Você deve escrever o nome de um produto e escolher uma categoria!</p>
+            </div>
+        </div>
+        <script src="day5.js"></script>
+    </body>
+</html>

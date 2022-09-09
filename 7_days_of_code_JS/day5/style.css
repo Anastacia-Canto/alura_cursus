@@ -1,0 +1,107 @@
+html {
+    background: #FFFFFF;
+}
+
+body {
+    background: #c3d0f6;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 5% 5%;
+    padding: 10% 10%;
+}
+
+body h1, form {
+    grid-column-start: 2;
+    text-align: center;
+}
+
+body h1{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3em;
+    color: #696666;
+    text-shadow: 2px 2px #363636;
+    margin-bottom: 30px;
+}
+
+#inicio, #inserir, #finalizar{
+    background: #f5f4eb;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #afa8a8;
+    font-family: 'Shadows Into Light', cursive;
+    color: #3056c9;
+    margin: 10% 0;
+}
+
+#inicio p, #inserir p {
+    margin: 10px 0;
+}
+
+#item, #elemento-removido{
+    border: solid 1px #afa8a8;
+    border-radius: 5px 5px;
+    font-family: 'Gentium Plus', serif;
+    color: #3056c9;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background: #c3d0f6;
+    margin: 0 5px;
+    padding: 2% 5%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1em;
+    color: #f5f4eb;
+    text-shadow: 1px 1px #696666;
+}
+
+button:hover {
+    background: #3056c9;
+}
+
+#inserir {
+    display: none;
+    text-align: left;
+}
+
+#finalizar {
+    display: none;
+}
+
+#remover {
+    display: none;
+}
+
+#remover button{
+    margin: 5% 0;
+}
+
+#modal-background {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+#inserir-modal {
+    background-color: rgba(48, 86, 201,0.8);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5em;
+    color: #f5f4eb;
+    text-align: center;
+    padding: 5%;
+    margin: 15% auto;
+    text-shadow: 2px 2px #696666;
+}
+
+.close {
+    float: right;
+}
